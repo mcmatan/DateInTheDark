@@ -1,0 +1,6 @@
+framework module Pods_DateInTheDarkTests {
+  umbrella header "Pods-DateInTheDarkTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
