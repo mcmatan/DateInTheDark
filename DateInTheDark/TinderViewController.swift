@@ -25,16 +25,18 @@ class TinderViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = UIColor.purpleColor()
+        self.view.backgroundColor = UIColor.whiteColor()
         let navBar = self.navigationController!.navigationBar
         navBar.barTintColor = UIColor(red: 65.0 / 255.0, green: 62.0 / 255.0, blue: 79.0 / 255.0, alpha: 1)
         navBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-        let btn = UIButton(type: UIButtonType.Custom)
-        btn.setTitle("PressMe", forState: UIControlState.Normal)
+        let btn = UIButton()
+        btn.setImage(UIImage(named: "ic_menuRotated@3x"), forState: UIControlState.Normal)
+        btn.imageView?.contentMode = UIViewContentMode.ScaleAspectFill
+        btn.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
         btn.addTarget(self, action: #selector(TinderViewController.showMenu(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         let barButton = UIBarButtonItem(customView: btn)
         self.navigationItem.leftBarButtonItem = barButton
+        self.navigationItem.title = "Pick Your Date"
     }
     
     func showMenu(sender: UIButton) {
@@ -46,7 +48,7 @@ class TinderViewController: UIViewController {
         }
         presentationAnimator.supportView = self.navigationController?.navigationBar
         presentationAnimator.presentButton = sender as UIView
-        presentationAnimator.duration = 0.6
+        presentationAnimator.duration = 0.25
         self.presentViewController(menuVC, animated: true, completion: nil)
     }
 }
