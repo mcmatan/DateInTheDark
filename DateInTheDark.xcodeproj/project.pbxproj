@@ -20,6 +20,9 @@
 		EDB3B1381D812DD20037A830 /* FacebookAppLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B1371D812DD20037A830 /* FacebookAppLifeCycle.swift */; };
 		EDB3B13A1D813F3A0037A830 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B1391D813F3A0037A830 /* RootViewController.swift */; };
 		EDB3B13F1D8145450037A830 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B13E1D8145450037A830 /* AppContainer.swift */; };
+		EDF9D1E01D8150B700BF3DE9 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D1DF1D8150B700BF3DE9 /* ApplicationViewController.swift */; };
+		EDF9D1E31D8152EC00BF3DE9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D1E21D8152EC00BF3DE9 /* Logger.swift */; };
+		EDF9D1E61D8157F000BF3DE9 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D1E51D8157F000BF3DE9 /* RootViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		EDB3B1371D812DD20037A830 /* FacebookAppLifeCycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookAppLifeCycle.swift; sourceTree = "<group>"; };
 		EDB3B1391D813F3A0037A830 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		EDB3B13E1D8145450037A830 /* AppContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		EDF9D1DF1D8150B700BF3DE9 /* ApplicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
+		EDF9D1E21D8152EC00BF3DE9 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		EDF9D1E51D8157F000BF3DE9 /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		EEF1269B1797FF2222DE76A7 /* Pods-DateInTheDark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DateInTheDark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DateInTheDark/Pods-DateInTheDark.debug.xcconfig"; sourceTree = "<group>"; };
 		FECE2A51CE07F4706BD7467B /* Pods_DateInTheDark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DateInTheDark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,6 +151,7 @@
 			children = (
 				EDB3B13D1D8145380037A830 /* DI */,
 				EDB3B13C1D81452E0037A830 /* Model */,
+				EDF9D1E41D8157DC00BF3DE9 /* ViewModels */,
 				ED3896601D805AE6007F6F73 /* View */,
 				ED3896321D805A98007F6F73 /* AppDelegate.swift */,
 				ED3896341D805A98007F6F73 /* ViewController.swift */,
@@ -178,6 +185,7 @@
 			children = (
 				ED3896611D805AF2007F6F73 /* LogInViewController.swift */,
 				EDB3B1391D813F3A0037A830 /* RootViewController.swift */,
+				EDF9D1DF1D8150B700BF3DE9 /* ApplicationViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -201,6 +209,7 @@
 		EDB3B13C1D81452E0037A830 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EDF9D1E11D8152E100BF3DE9 /* Logger */,
 				EDB3B1351D812DB20037A830 /* Facebook */,
 			);
 			name = Model;
@@ -212,6 +221,22 @@
 				EDB3B13E1D8145450037A830 /* AppContainer.swift */,
 			);
 			name = DI;
+			sourceTree = "<group>";
+		};
+		EDF9D1E11D8152E100BF3DE9 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				EDF9D1E21D8152EC00BF3DE9 /* Logger.swift */,
+			);
+			name = Logger;
+			sourceTree = "<group>";
+		};
+		EDF9D1E41D8157DC00BF3DE9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EDF9D1E51D8157F000BF3DE9 /* RootViewModel.swift */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,6 +506,9 @@
 				ED3896351D805A98007F6F73 /* ViewController.swift in Sources */,
 				ED3896331D805A98007F6F73 /* AppDelegate.swift in Sources */,
 				ED3896621D805AF2007F6F73 /* LogInViewController.swift in Sources */,
+				EDF9D1E01D8150B700BF3DE9 /* ApplicationViewController.swift in Sources */,
+				EDF9D1E61D8157F000BF3DE9 /* RootViewModel.swift in Sources */,
+				EDF9D1E31D8152EC00BF3DE9 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         FacebookAppLifeCycle.applicationDidFinishLaunchingWithOptions(application, options: launchOptions)
         self.appContainer = AppContainer()
+        self.appContainer?.setup()
         self.window = self.appContainer!.getWindow()
         return true
     }

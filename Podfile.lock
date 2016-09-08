@@ -7,6 +7,8 @@ PODS:
   - Bolts/Tasks (1.8.4)
   - FBSDKCoreKit (4.15.0):
     - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.15.0):
+    - FBSDKCoreKit
   - FBSDKShareKit (4.15.0):
     - FBSDKCoreKit
   - RxSwift (2.6.0)
@@ -15,6 +17,7 @@ PODS:
 
 DEPENDENCIES:
   - FBSDKCoreKit (~> 4.15)
+  - FBSDKLoginKit (~> 4.15)
   - FBSDKShareKit (~> 4.15)
   - RxSwift (~> 2.6)
   - SnapKit (~> 0.22)
@@ -23,11 +26,12 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FBSDKCoreKit: 6680cbd33a4243d80700f182d0af36b3fa7f3118
+  FBSDKLoginKit: 96d9b70b5784490f02ab86119e542a1f182017a8
   FBSDKShareKit: 06ef20cb2f16828ca4b20055333313dd445de362
   RxSwift: 77f3a0b15324baa7a1c9bfa9f199648a82424e26
   SnapKit: 0dd2fd157330f1ea11fd84da13e6be8a7a22bae0
   Swinject: 69273c2419f93d52603c3a546f5d2792ee1a5e98
 
-PODFILE CHECKSUM: ce5981da2102a318df8b6c78b148b47f6e61d727
+PODFILE CHECKSUM: 8351cc2be8cb33531f9f50c4a7447cfe0c0fc52a
 
 COCOAPODS: 1.0.0

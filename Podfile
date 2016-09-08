@@ -12,6 +12,7 @@ target 'DateInTheDark' do
    pod 'FBSDKCoreKit', '~> 4.15'
    pod 'FBSDKCoreKit', '~> 4.15'
    pod 'FBSDKShareKit', '~> 4.15'
+   pod 'FBSDKLoginKit', '~> 4.15'
    pod 'Swinject', '~> 1.1'
 
   target 'DateInTheDarkTests' do

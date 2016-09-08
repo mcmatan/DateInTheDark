@@ -8,10 +8,7 @@
 
 import Foundation
 import UIKit
-
-protocol LoginViewControllerType {
-    
-}
+import FBSDKLoginKit
 
 class LogInViewController: UIViewController {
     
