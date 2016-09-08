@@ -24,10 +24,16 @@ class AppContainer {
                 return viewModel
             }
             
+            c.register(LogInViewModelType.self) { r in
+                let viewModel = LogInViewModel()
+                return viewModel
+            }
+            
             //MARK: Controllers
             
             c.register(LogInViewController.self) { r in
-                let controller = LogInViewController()
+                let viewModel = r.resolve(LogInViewModelType.self)
+                let controller = LogInViewController(viewModel: viewModel!)
                 return controller
             }
             
@@ -43,15 +49,6 @@ class AppContainer {
                 let controller = RootViewController(loginViewController!, maimApplicationViewController: applicationViewController!, viewModel: viewModel!)
                 return controller
             }
-//            c.register(AnimalType.self) { _ in Cat(name: "Mimi") }
-//            c.register(PersonType.self) { r in
-//                PetOwner(pet: r.resolve(AnimalType.self)!)
-//            }
-//            c.register(PersonViewController.self) { r in
-//                let controller = PersonViewController()
-//                controller.person = r.resolve(PersonType.self)
-//                return controller
-//            }
         }
     }
     

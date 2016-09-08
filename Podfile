@@ -14,6 +14,7 @@ target 'DateInTheDark' do
    pod 'FBSDKShareKit', '~> 4.15'
    pod 'FBSDKLoginKit', '~> 4.15'
    pod 'Swinject', '~> 1.1'
+   pod 'EmitterKit', '~> 4.0'
 
   target 'DateInTheDarkTests' do
     inherit! :search_paths

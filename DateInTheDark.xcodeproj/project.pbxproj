@@ -23,6 +23,7 @@
 		EDF9D1E01D8150B700BF3DE9 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D1DF1D8150B700BF3DE9 /* ApplicationViewController.swift */; };
 		EDF9D1E31D8152EC00BF3DE9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D1E21D8152EC00BF3DE9 /* Logger.swift */; };
 		EDF9D1E61D8157F000BF3DE9 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D1E51D8157F000BF3DE9 /* RootViewModel.swift */; };
+		EDF9D1E91D81911000BF3DE9 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D1E81D81911000BF3DE9 /* LogInViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		EDF9D1DF1D8150B700BF3DE9 /* ApplicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
 		EDF9D1E21D8152EC00BF3DE9 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		EDF9D1E51D8157F000BF3DE9 /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		EDF9D1E81D81911000BF3DE9 /* LogInViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
 		EEF1269B1797FF2222DE76A7 /* Pods-DateInTheDark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DateInTheDark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DateInTheDark/Pods-DateInTheDark.debug.xcconfig"; sourceTree = "<group>"; };
 		FECE2A51CE07F4706BD7467B /* Pods_DateInTheDark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DateInTheDark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -235,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				EDF9D1E51D8157F000BF3DE9 /* RootViewModel.swift */,
+				EDF9D1E81D81911000BF3DE9 /* LogInViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				ED3896351D805A98007F6F73 /* ViewController.swift in Sources */,
 				ED3896331D805A98007F6F73 /* AppDelegate.swift in Sources */,
 				ED3896621D805AF2007F6F73 /* LogInViewController.swift in Sources */,
+				EDF9D1E91D81911000BF3DE9 /* LogInViewModel.swift in Sources */,
 				EDF9D1E01D8150B700BF3DE9 /* ApplicationViewController.swift in Sources */,
 				EDF9D1E61D8157F000BF3DE9 /* RootViewModel.swift in Sources */,
 				EDF9D1E31D8152EC00BF3DE9 /* Logger.swift in Sources */,
