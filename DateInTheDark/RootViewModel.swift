@@ -16,13 +16,21 @@ protocol RootViewModelType {
 
 class RootViewModel: RootViewModelType {
     let showLogin = BehaviorSubject<Bool>(value: true)
+    private let loginService: LoginServiceType
     
-    init() {
-        subscribeForEvents()
+    init(loginService: LoginServiceType) {
+        self.loginService = loginService
+        self.subscribeForEvents()
+        self.checkIfLoggedIn()
+    }
+    
+    func checkIfLoggedIn() {
+        self.loginService.isLoggedIn { (isLoggenIn) in
+            self.showLogin.onNext(!isLoggenIn)
+        }
     }
     
     func subscribeForEvents() {
-        
         Events.userLoggedIn.once { (void) in
             self.showLogin.onNext(false)
         }

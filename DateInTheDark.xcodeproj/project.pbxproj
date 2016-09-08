@@ -20,7 +20,11 @@
 		EDB3B1381D812DD20037A830 /* FacebookAppLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B1371D812DD20037A830 /* FacebookAppLifeCycle.swift */; };
 		EDB3B13A1D813F3A0037A830 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B1391D813F3A0037A830 /* RootViewController.swift */; };
 		EDB3B13F1D8145450037A830 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B13E1D8145450037A830 /* AppContainer.swift */; };
-		EDF9D1E01D8150B700BF3DE9 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D1DF1D8150B700BF3DE9 /* ApplicationViewController.swift */; };
+		EDB739F01D81A3550034B0C7 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB739EF1D81A3550034B0C7 /* LoginService.swift */; };
+		EDB739F31D81A45D0034B0C7 /* QuickBloxSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB739F21D81A45D0034B0C7 /* QuickBloxSetup.swift */; };
+		EDB739F51D81A8EF0034B0C7 /* TinterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB739F41D81A8EF0034B0C7 /* TinterViewController.swift */; };
+		EDB739F81D81AB5B0034B0C7 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB739F71D81AB5B0034B0C7 /* KeyChain.swift */; };
+		EDF9D1E01D8150B700BF3DE9 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D1DF1D8150B700BF3DE9 /* MainNavigationController.swift */; };
 		EDF9D1E31D8152EC00BF3DE9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D1E21D8152EC00BF3DE9 /* Logger.swift */; };
 		EDF9D1E61D8157F000BF3DE9 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D1E51D8157F000BF3DE9 /* RootViewModel.swift */; };
 		EDF9D1E91D81911000BF3DE9 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D1E81D81911000BF3DE9 /* LogInViewModel.swift */; };
@@ -68,7 +72,11 @@
 		EDB3B1371D812DD20037A830 /* FacebookAppLifeCycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookAppLifeCycle.swift; sourceTree = "<group>"; };
 		EDB3B1391D813F3A0037A830 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		EDB3B13E1D8145450037A830 /* AppContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
-		EDF9D1DF1D8150B700BF3DE9 /* ApplicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
+		EDB739EF1D81A3550034B0C7 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		EDB739F21D81A45D0034B0C7 /* QuickBloxSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickBloxSetup.swift; sourceTree = "<group>"; };
+		EDB739F41D81A8EF0034B0C7 /* TinterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinterViewController.swift; sourceTree = "<group>"; };
+		EDB739F71D81AB5B0034B0C7 /* KeyChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
+		EDF9D1DF1D8150B700BF3DE9 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		EDF9D1E21D8152EC00BF3DE9 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		EDF9D1E51D8157F000BF3DE9 /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		EDF9D1E81D81911000BF3DE9 /* LogInViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
@@ -190,7 +198,8 @@
 			children = (
 				ED3896611D805AF2007F6F73 /* LogInViewController.swift */,
 				EDB3B1391D813F3A0037A830 /* RootViewController.swift */,
-				EDF9D1DF1D8150B700BF3DE9 /* ApplicationViewController.swift */,
+				EDF9D1DF1D8150B700BF3DE9 /* MainNavigationController.swift */,
+				EDB739F41D81A8EF0034B0C7 /* TinterViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -214,6 +223,9 @@
 		EDB3B13C1D81452E0037A830 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EDB739F61D81AB330034B0C7 /* KeyChain */,
+				EDB739F11D81A44D0034B0C7 /* QuickBloxSetup */,
+				EDB739EE1D81A2B10034B0C7 /* LoginService */,
 				EDF9D1E11D8152E100BF3DE9 /* Logger */,
 				EDB3B1351D812DB20037A830 /* Facebook */,
 			);
@@ -226,6 +238,30 @@
 				EDB3B13E1D8145450037A830 /* AppContainer.swift */,
 			);
 			name = DI;
+			sourceTree = "<group>";
+		};
+		EDB739EE1D81A2B10034B0C7 /* LoginService */ = {
+			isa = PBXGroup;
+			children = (
+				EDB739EF1D81A3550034B0C7 /* LoginService.swift */,
+			);
+			name = LoginService;
+			sourceTree = "<group>";
+		};
+		EDB739F11D81A44D0034B0C7 /* QuickBloxSetup */ = {
+			isa = PBXGroup;
+			children = (
+				EDB739F21D81A45D0034B0C7 /* QuickBloxSetup.swift */,
+			);
+			name = QuickBloxSetup;
+			sourceTree = "<group>";
+		};
+		EDB739F61D81AB330034B0C7 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				EDB739F71D81AB5B0034B0C7 /* KeyChain.swift */,
+			);
+			name = KeyChain;
 			sourceTree = "<group>";
 		};
 		EDF9D1E11D8152E100BF3DE9 /* Logger */ = {
@@ -518,12 +554,16 @@
 				EDF9D1EC1D8194EE00BF3DE9 /* Events.swift in Sources */,
 				EDB3B13F1D8145450037A830 /* AppContainer.swift in Sources */,
 				EDB3B1381D812DD20037A830 /* FacebookAppLifeCycle.swift in Sources */,
+				EDB739F31D81A45D0034B0C7 /* QuickBloxSetup.swift in Sources */,
 				ED3896351D805A98007F6F73 /* ViewController.swift in Sources */,
 				ED3896331D805A98007F6F73 /* AppDelegate.swift in Sources */,
+				EDB739F81D81AB5B0034B0C7 /* KeyChain.swift in Sources */,
 				ED3896621D805AF2007F6F73 /* LogInViewController.swift in Sources */,
+				EDB739F01D81A3550034B0C7 /* LoginService.swift in Sources */,
 				EDF9D1E91D81911000BF3DE9 /* LogInViewModel.swift in Sources */,
-				EDF9D1E01D8150B700BF3DE9 /* ApplicationViewController.swift in Sources */,
+				EDF9D1E01D8150B700BF3DE9 /* MainNavigationController.swift in Sources */,
 				EDF9D1E61D8157F000BF3DE9 /* RootViewModel.swift in Sources */,
+				EDB739F51D81A8EF0034B0C7 /* TinterViewController.swift in Sources */,
 				EDF9D1E31D8152EC00BF3DE9 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

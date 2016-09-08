@@ -29,6 +29,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GuillotineMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Koloda.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-DateInTheDark.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -59,10 +69,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0CEB892D8C8060834F6C077D119BD98B</key>
+		<key>0A851594693537144DDBAEE24E61257A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2637C02A9FA946061714A669B4162D08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2692A60CA9509B2E2A543556E170DCB4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,12 +102,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>545A63CC92C44ADCA7091F0D5A13A48D</key>
+		<key>43B162AF642AADBB1F8392C0FEF6E38D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5EE076DCDF68CF4046E90298E9F9F056</key>
+		<key>43BD4E829F364F3A9D76BB15D1AE2421</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>545A63CC92C44ADCA7091F0D5A13A48D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,7 +122,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>82B7B057613574B37C7153E3FE9B30AA</key>
+		<key>80739625E5A47B76780ACE1ED759B42A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,7 +132,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A57EECF1E00639AD3E365F73DC637422</key>
+		<key>C45290004E0078130C91A71711094467</key>
 		<dict>
 			<key>primary</key>
 			<true/>

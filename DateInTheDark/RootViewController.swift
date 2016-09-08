@@ -12,14 +12,14 @@ import RxSwift
 
 class RootViewController :UIViewController {
     let loginViewController: UIViewController
-    let mainApplicationViewController: UIViewController
+    let mainNavigationController: UIViewController
     let viewModel: RootViewModelType
     let disposeBag = DisposeBag()
     var didBind = false
     
-    init(_ loginViewController: UIViewController, mainApplicationViewController: UIViewController, viewModel: RootViewModelType) {
+    init(_ loginViewController: UIViewController, mainNavigationController: UIViewController, viewModel: RootViewModelType) {
         self.loginViewController = loginViewController
-        self.mainApplicationViewController = mainApplicationViewController
+        self.mainNavigationController = mainNavigationController
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -51,20 +51,24 @@ class RootViewController :UIViewController {
     //MARK: Show screens
     
     func showLoginScreen() {
-        self.mainApplicationViewController.dismissViewControllerAnimated(false) { 
-            self.presentViewController(self.loginViewController, animated: true, completion: nil)
-        }
+            self.dissmissLastController{ 
+              self.presentViewController(self.loginViewController, animated: true, completion: nil)
+            }
     }
     
     func showMainApplication() {
-        self.loginViewController.dismissViewControllerAnimated(false) { 
-            self.presentViewController(self.mainApplicationViewController, animated: true, completion: nil)
+        self.dissmissLastController { 
+         self.presentViewController(self.mainNavigationController, animated: true, completion: nil)
         }
     }
 
-//    func dissmissLastController(completion:()->Void) {
-//        if self.presentingViewController != nil {
-//            self.dis
-//        }
-//    }
+    func dissmissLastController(finsihedBlock:()->Void) {
+        if self.presentedViewController != nil {
+            self.presentedViewController!.dismissViewControllerAnimated(false, completion: {
+                finsihedBlock()
+            })
+        } else {
+            finsihedBlock()
+        }
+    }
 }

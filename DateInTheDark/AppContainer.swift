@@ -17,15 +17,28 @@ class AppContainer {
     func setup() {
         self.container = Container() { c in
             
+            
+            //MARK: Model
+            
+            c.register(KeyChainType.self) { r in
+                let keyChain = KeyChain()
+                return keyChain
+            }
+            
+            c.register(LoginServiceType.self) { r in
+                let model = LoginService(keyChain: r.resolve(KeyChainType.self)!)
+                return model
+            }
+            
             //MARK: ViewModels
             
             c.register(RootViewModelType.self) { r in
-                let viewModel = RootViewModel()
+                let viewModel = RootViewModel(loginService: r.resolve(LoginServiceType.self)!)
                 return viewModel
             }
             
             c.register(LogInViewModelType.self) { r in
-                let viewModel = LogInViewModel()
+                let viewModel = LogInViewModel(loginService: r.resolve(LoginServiceType.self)!)
                 return viewModel
             }
             
@@ -37,16 +50,16 @@ class AppContainer {
                 return controller
             }
             
-            c.register(ApplicationViewController.self) { r in
-                let controller = ApplicationViewController()
+            c.register(MainNavigationController.self) { r in
+                let controller = MainNavigationController()
                 return controller
             }
             
             c.register(RootViewController.self) { r in
-            let applicationViewController = r.resolve(ApplicationViewController.self)
+            let mainNavigationController = r.resolve(MainNavigationController.self)
             let loginViewController = r.resolve(LogInViewController.self)
             let viewModel = r.resolve(RootViewModelType.self)
-                let controller = RootViewController(loginViewController!, mainApplicationViewController: applicationViewController!, viewModel: viewModel!)
+                let controller = RootViewController(loginViewController!, mainNavigationController: mainNavigationController!, viewModel: viewModel!)
                 return controller
             }
         }

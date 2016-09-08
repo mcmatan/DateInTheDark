@@ -15,6 +15,10 @@ target 'DateInTheDark' do
    pod 'FBSDKLoginKit', '~> 4.15'
    pod 'Swinject', '~> 1.1'
    pod 'EmitterKit', '~> 4.0'
+   pod 'QuickBlox', '~> 2.7'
+   pod 'Koloda', '~> 3.1'
+   pod 'GuillotineMenu', '~> 2.0.2'
+
 
   target 'DateInTheDarkTests' do
     inherit! :search_paths

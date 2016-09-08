@@ -15,6 +15,22 @@ protocol LogInViewModelType: FBSDKLoginButtonDelegate {
 }
 
 class LogInViewModel: NSObject, LogInViewModelType {
+    let loginService: LoginServiceType
+    
+    init(loginService: LoginServiceType) {
+        self.loginService = loginService
+    }
+    
+    //MARK: Quickblox
+    
+    func loginQuickblox(with facebookAccessToken: String) {
+        self.loginService.login(with: facebookAccessToken) { (success) in
+            if success == true {
+                Events.userLoggedIn.emit()
+            }
+        }
+    }
+    
     //MARK: Facebook button delegate
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
@@ -27,7 +43,7 @@ class LogInViewModel: NSObject, LogInViewModelType {
         }
         else {
             printDebug("Success login in with facebook")
-            Events.userLoggedIn.emit()
+            self.loginQuickblox(with: result.token.tokenString)
         }
     }
     
