@@ -29,11 +29,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>GuillotineMenu.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Koloda.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -77,16 +72,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0A851594693537144DDBAEE24E61257A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2637C02A9FA946061714A669B4162D08</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2692A60CA9509B2E2A543556E170DCB4</key>
 		<dict>
 			<key>primary</key>
@@ -102,12 +87,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>43B162AF642AADBB1F8392C0FEF6E38D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>43BD4E829F364F3A9D76BB15D1AE2421</key>
+		<key>51301EF487C3B4FBAF1544566F381970</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,12 +102,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>80739625E5A47B76780ACE1ED759B42A</key>
+		<key>922F1C8735DAD55C9AB053DB2BFE18EF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9D0F2E5EA1B46A5D72FFD42B0B39DBBC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1CCEA6E9DA5BBBA2B9080260600D9CA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -143,6 +128,11 @@
 			<true/>
 		</dict>
 		<key>FB1C79F68BE996F9364359E29264650C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFEAF67555BE5A1D13B45777D6043F41</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -50,8 +50,18 @@ class AppContainer {
                 return controller
             }
             
+            c.register(MenuViewController.self) { r in
+                let controller = MenuViewController()
+                return controller
+            }
+            
+            c.register(TinderViewController.self) { r in
+                let controller = TinderViewController(menuController: r.resolve(MenuViewController.self)!)
+                return controller
+            }
+            
             c.register(MainNavigationController.self) { r in
-                let controller = MainNavigationController()
+                let controller = MainNavigationController(rootViewController: r.resolve(TinderViewController.self)!)
                 return controller
             }
             

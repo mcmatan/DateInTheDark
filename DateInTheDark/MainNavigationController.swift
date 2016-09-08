@@ -10,10 +10,4 @@ import Foundation
 import UIKit
 
 class MainNavigationController: UINavigationController {
-    
-    override func loadView() {
-        super.loadView()
-        
-        self.view.backgroundColor = UIColor.purpleColor()
-    }
 }
