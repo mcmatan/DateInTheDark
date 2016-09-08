@@ -25,14 +25,104 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DateInTheDark/LogInViewModel.swift"
-            timestampString = "495030860.916389"
+            filePath = "DateInTheDark/RootViewController.swift"
+            timestampString = "495032056.450992"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "loginButtonDidLogOut(_:)"
-            landmarkType = "5">
+            startingLineNumber = "42"
+            endingLineNumber = "42">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DateInTheDark/RootViewController.swift"
+            timestampString = "495032210.990906"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DateInTheDark.RootViewController.showMainApplication () -&gt; ()"
+                  moduleName = "DateInTheDark"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matan.cohen/Documents/EtherFullProjects/DateInTheDark/DateInTheDark/RootViewController.swift"
+                  timestampString = "495032325.393034"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DateInTheDark.RootViewController.(showMainApplication () -&gt; ()).(closure #1)"
+                  moduleName = "DateInTheDark"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matan.cohen/Documents/EtherFullProjects/DateInTheDark/DateInTheDark/RootViewController.swift"
+                  timestampString = "495032325.393291"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "334">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DateInTheDark/RootViewController.swift"
+            timestampString = "495032210.990906"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DateInTheDark.RootViewController.showLoginScreen () -&gt; ()"
+                  moduleName = "DateInTheDark"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matan.cohen/Documents/EtherFullProjects/DateInTheDark/DateInTheDark/RootViewController.swift"
+                  timestampString = "495032325.394421"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DateInTheDark.RootViewController.(showLoginScreen () -&gt; ()).(closure #1)"
+                  moduleName = "DateInTheDark"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matan.cohen/Documents/EtherFullProjects/DateInTheDark/DateInTheDark/RootViewController.swift"
+                  timestampString = "495032325.394562"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "334">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -27,6 +27,7 @@ class LogInViewModel: NSObject, LogInViewModelType {
         }
         else {
             printDebug("Success login in with facebook")
+            Events.userLoggedIn.emit()
         }
     }
     

@@ -46,7 +46,7 @@ class AppContainer {
             let applicationViewController = r.resolve(ApplicationViewController.self)
             let loginViewController = r.resolve(LogInViewController.self)
             let viewModel = r.resolve(RootViewModelType.self)
-                let controller = RootViewController(loginViewController!, maimApplicationViewController: applicationViewController!, viewModel: viewModel!)
+                let controller = RootViewController(loginViewController!, mainApplicationViewController: applicationViewController!, viewModel: viewModel!)
                 return controller
             }
         }
