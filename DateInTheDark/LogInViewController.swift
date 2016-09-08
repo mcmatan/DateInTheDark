@@ -9,12 +9,15 @@
 import Foundation
 import UIKit
 
+protocol LoginViewControllerType {
+    
+}
+
 class LogInViewController: UIViewController {
-    let btnFacebookLogin
     
     override func loadView() {
         super.loadView()
         
-        
+        self.view.backgroundColor = UIColor.redColor()
     }
 }

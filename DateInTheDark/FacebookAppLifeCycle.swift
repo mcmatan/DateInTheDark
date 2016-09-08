@@ -15,7 +15,7 @@ class FacebookAppLifeCycle {
         FBSDKAppEvents.activateApp()
     }
     
-    static func applicationDidFinishLaunchingWithOptions(application: UIApplication ,options: [NSObject: AnyObject]) {
+    static func applicationDidFinishLaunchingWithOptions(application: UIApplication ,options: [NSObject: AnyObject]?) {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: options)
     }
     

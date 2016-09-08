@@ -12,13 +12,14 @@
 		AFA8E6B770C5EDD83049385E /* Pods_DateInTheDarkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89D5FA678F0A6BF333FD1F1 /* Pods_DateInTheDarkUITests.framework */; };
 		ED3896331D805A98007F6F73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3896321D805A98007F6F73 /* AppDelegate.swift */; };
 		ED3896351D805A98007F6F73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3896341D805A98007F6F73 /* ViewController.swift */; };
-		ED3896381D805A98007F6F73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3896361D805A98007F6F73 /* Main.storyboard */; };
 		ED38963A1D805A98007F6F73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3896391D805A98007F6F73 /* Assets.xcassets */; };
 		ED38963D1D805A98007F6F73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED38963B1D805A98007F6F73 /* LaunchScreen.storyboard */; };
 		ED3896481D805A98007F6F73 /* DateInTheDarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3896471D805A98007F6F73 /* DateInTheDarkTests.swift */; };
 		ED3896531D805A98007F6F73 /* DateInTheDarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3896521D805A98007F6F73 /* DateInTheDarkUITests.swift */; };
 		ED3896621D805AF2007F6F73 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3896611D805AF2007F6F73 /* LogInViewController.swift */; };
 		EDB3B1381D812DD20037A830 /* FacebookAppLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B1371D812DD20037A830 /* FacebookAppLifeCycle.swift */; };
+		EDB3B13A1D813F3A0037A830 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B1391D813F3A0037A830 /* RootViewController.swift */; };
+		EDB3B13F1D8145450037A830 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B13E1D8145450037A830 /* AppContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,6 @@
 		ED38962F1D805A98007F6F73 /* DateInTheDark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DateInTheDark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3896321D805A98007F6F73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED3896341D805A98007F6F73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ED3896371D805A98007F6F73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED3896391D805A98007F6F73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED38963C1D805A98007F6F73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED38963E1D805A98007F6F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +61,8 @@
 		ED3896541D805A98007F6F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED3896611D805AF2007F6F73 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		EDB3B1371D812DD20037A830 /* FacebookAppLifeCycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookAppLifeCycle.swift; sourceTree = "<group>"; };
+		EDB3B1391D813F3A0037A830 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		EDB3B13E1D8145450037A830 /* AppContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		EEF1269B1797FF2222DE76A7 /* Pods-DateInTheDark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DateInTheDark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DateInTheDark/Pods-DateInTheDark.debug.xcconfig"; sourceTree = "<group>"; };
 		FECE2A51CE07F4706BD7467B /* Pods_DateInTheDark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DateInTheDark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -141,11 +143,11 @@
 		ED3896311D805A98007F6F73 /* DateInTheDark */ = {
 			isa = PBXGroup;
 			children = (
-				EDB3B1351D812DB20037A830 /* Facebook */,
+				EDB3B13D1D8145380037A830 /* DI */,
+				EDB3B13C1D81452E0037A830 /* Model */,
 				ED3896601D805AE6007F6F73 /* View */,
 				ED3896321D805A98007F6F73 /* AppDelegate.swift */,
 				ED3896341D805A98007F6F73 /* ViewController.swift */,
-				ED3896361D805A98007F6F73 /* Main.storyboard */,
 				ED3896391D805A98007F6F73 /* Assets.xcassets */,
 				ED38963B1D805A98007F6F73 /* LaunchScreen.storyboard */,
 				ED38963E1D805A98007F6F73 /* Info.plist */,
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				ED3896611D805AF2007F6F73 /* LogInViewController.swift */,
+				EDB3B1391D813F3A0037A830 /* RootViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -193,6 +196,22 @@
 				EDB3B1371D812DD20037A830 /* FacebookAppLifeCycle.swift */,
 			);
 			name = FacebookAppLifeCycle;
+			sourceTree = "<group>";
+		};
+		EDB3B13C1D81452E0037A830 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3B1351D812DB20037A830 /* Facebook */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EDB3B13D1D8145380037A830 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3B13E1D8145450037A830 /* AppContainer.swift */,
+			);
+			name = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +328,6 @@
 			files = (
 				ED38963D1D805A98007F6F73 /* LaunchScreen.storyboard in Resources */,
 				ED38963A1D805A98007F6F73 /* Assets.xcassets in Resources */,
-				ED3896381D805A98007F6F73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +475,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB3B13A1D813F3A0037A830 /* RootViewController.swift in Sources */,
+				EDB3B13F1D8145450037A830 /* AppContainer.swift in Sources */,
 				EDB3B1381D812DD20037A830 /* FacebookAppLifeCycle.swift in Sources */,
 				ED3896351D805A98007F6F73 /* ViewController.swift in Sources */,
 				ED3896331D805A98007F6F73 /* AppDelegate.swift in Sources */,
@@ -496,14 +516,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ED3896361D805A98007F6F73 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ED3896371D805A98007F6F73 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ED38963B1D805A98007F6F73 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
