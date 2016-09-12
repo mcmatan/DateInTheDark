@@ -17,6 +17,15 @@
 		ED3896481D805A98007F6F73 /* DateInTheDarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3896471D805A98007F6F73 /* DateInTheDarkTests.swift */; };
 		ED3896531D805A98007F6F73 /* DateInTheDarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3896521D805A98007F6F73 /* DateInTheDarkUITests.swift */; };
 		ED3896621D805AF2007F6F73 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3896611D805AF2007F6F73 /* LogInViewController.swift */; };
+		ED403C2E1D86921C00A16668 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED403C251D86921C00A16668 /* TinderViewController.swift */; };
+		ED403C2F1D86921C00A16668 /* BackgroundKolodaAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED403C261D86921C00A16668 /* BackgroundKolodaAnimator.swift */; };
+		ED403C301D86921C00A16668 /* ExampleOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED403C271D86921C00A16668 /* ExampleOverlayView.swift */; };
+		ED403C311D86921C00A16668 /* CustomKolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED403C281D86921C00A16668 /* CustomKolodaView.swift */; };
+		ED403C321D86921C00A16668 /* CustomOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED403C291D86921C00A16668 /* CustomOverlayView.swift */; };
+		ED403C331D86921C00A16668 /* TinderViewControllerStroyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED403C2A1D86921C00A16668 /* TinderViewControllerStroyboard.storyboard */; };
+		ED403C341D86921C00A16668 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED403C2B1D86921C00A16668 /* LaunchScreen.xib */; };
+		ED403C351D86921C00A16668 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED403C2C1D86921C00A16668 /* OverlayView.xib */; };
+		ED403C361D86921C00A16668 /* CustomOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED403C2D1D86921C00A16668 /* CustomOverlayView.xib */; };
 		EDB3B1381D812DD20037A830 /* FacebookAppLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B1371D812DD20037A830 /* FacebookAppLifeCycle.swift */; };
 		EDB3B13A1D813F3A0037A830 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B1391D813F3A0037A830 /* RootViewController.swift */; };
 		EDB3B13F1D8145450037A830 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3B13E1D8145450037A830 /* AppContainer.swift */; };
@@ -25,7 +34,7 @@
 		EDB7069D1D81F288005D86A3 /* ic_menuRotated@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDB7069C1D81F288005D86A3 /* ic_menuRotated@3x.png */; };
 		EDB739F01D81A3550034B0C7 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB739EF1D81A3550034B0C7 /* LoginService.swift */; };
 		EDB739F31D81A45D0034B0C7 /* QuickBloxSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB739F21D81A45D0034B0C7 /* QuickBloxSetup.swift */; };
-		EDB739F51D81A8EF0034B0C7 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB739F41D81A8EF0034B0C7 /* TinderViewController.swift */; };
+		EDB739F51D81A8EF0034B0C7 /* TinderBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB739F41D81A8EF0034B0C7 /* TinderBackgroundViewController.swift */; };
 		EDB739F81D81AB5B0034B0C7 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB739F71D81AB5B0034B0C7 /* KeyChain.swift */; };
 		EDF9D1E01D8150B700BF3DE9 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D1DF1D8150B700BF3DE9 /* MainNavigationController.swift */; };
 		EDF9D1E31D8152EC00BF3DE9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9D1E21D8152EC00BF3DE9 /* Logger.swift */; };
@@ -72,6 +81,15 @@
 		ED3896521D805A98007F6F73 /* DateInTheDarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInTheDarkUITests.swift; sourceTree = "<group>"; };
 		ED3896541D805A98007F6F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED3896611D805AF2007F6F73 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		ED403C251D86921C00A16668 /* TinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
+		ED403C261D86921C00A16668 /* BackgroundKolodaAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundKolodaAnimator.swift; sourceTree = "<group>"; };
+		ED403C271D86921C00A16668 /* ExampleOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleOverlayView.swift; sourceTree = "<group>"; };
+		ED403C281D86921C00A16668 /* CustomKolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKolodaView.swift; sourceTree = "<group>"; };
+		ED403C291D86921C00A16668 /* CustomOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOverlayView.swift; sourceTree = "<group>"; };
+		ED403C2A1D86921C00A16668 /* TinderViewControllerStroyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TinderViewControllerStroyboard.storyboard; sourceTree = "<group>"; };
+		ED403C2B1D86921C00A16668 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		ED403C2C1D86921C00A16668 /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
+		ED403C2D1D86921C00A16668 /* CustomOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomOverlayView.xib; sourceTree = "<group>"; };
 		EDB3B1371D812DD20037A830 /* FacebookAppLifeCycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookAppLifeCycle.swift; sourceTree = "<group>"; };
 		EDB3B1391D813F3A0037A830 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		EDB3B13E1D8145450037A830 /* AppContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
@@ -80,7 +98,7 @@
 		EDB7069C1D81F288005D86A3 /* ic_menuRotated@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_menuRotated@3x.png"; sourceTree = "<group>"; };
 		EDB739EF1D81A3550034B0C7 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		EDB739F21D81A45D0034B0C7 /* QuickBloxSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickBloxSetup.swift; sourceTree = "<group>"; };
-		EDB739F41D81A8EF0034B0C7 /* TinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
+		EDB739F41D81A8EF0034B0C7 /* TinderBackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderBackgroundViewController.swift; sourceTree = "<group>"; };
 		EDB739F71D81AB5B0034B0C7 /* KeyChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		EDF9D1DF1D8150B700BF3DE9 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		EDF9D1E21D8152EC00BF3DE9 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -204,13 +222,30 @@
 		ED3896601D805AE6007F6F73 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED403C1E1D868D9300A16668 /* TinderView */,
 				ED3896611D805AF2007F6F73 /* LogInViewController.swift */,
 				EDB3B1391D813F3A0037A830 /* RootViewController.swift */,
 				EDF9D1DF1D8150B700BF3DE9 /* MainNavigationController.swift */,
-				EDB739F41D81A8EF0034B0C7 /* TinderViewController.swift */,
 				EDB7069A1D81EBB1005D86A3 /* MenuViewController.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		ED403C1E1D868D9300A16668 /* TinderView */ = {
+			isa = PBXGroup;
+			children = (
+				ED403C251D86921C00A16668 /* TinderViewController.swift */,
+				EDB739F41D81A8EF0034B0C7 /* TinderBackgroundViewController.swift */,
+				ED403C261D86921C00A16668 /* BackgroundKolodaAnimator.swift */,
+				ED403C271D86921C00A16668 /* ExampleOverlayView.swift */,
+				ED403C281D86921C00A16668 /* CustomKolodaView.swift */,
+				ED403C291D86921C00A16668 /* CustomOverlayView.swift */,
+				ED403C2A1D86921C00A16668 /* TinderViewControllerStroyboard.storyboard */,
+				ED403C2B1D86921C00A16668 /* LaunchScreen.xib */,
+				ED403C2C1D86921C00A16668 /* OverlayView.xib */,
+				ED403C2D1D86921C00A16668 /* CustomOverlayView.xib */,
+			);
+			name = TinderView;
 			sourceTree = "<group>";
 		};
 		EDB3B1351D812DB20037A830 /* Facebook */ = {
@@ -418,9 +453,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED403C361D86921C00A16668 /* CustomOverlayView.xib in Resources */,
+				ED403C341D86921C00A16668 /* LaunchScreen.xib in Resources */,
+				ED403C351D86921C00A16668 /* OverlayView.xib in Resources */,
 				ED38963D1D805A98007F6F73 /* LaunchScreen.storyboard in Resources */,
 				EDB7069D1D81F288005D86A3 /* ic_menuRotated@3x.png in Resources */,
 				ED38963A1D805A98007F6F73 /* Assets.xcassets in Resources */,
+				ED403C331D86921C00A16668 /* TinderViewControllerStroyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,7 +607,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED403C311D86921C00A16668 /* CustomKolodaView.swift in Sources */,
 				EDB3B13A1D813F3A0037A830 /* RootViewController.swift in Sources */,
+				ED403C2F1D86921C00A16668 /* BackgroundKolodaAnimator.swift in Sources */,
 				EDF9D1EC1D8194EE00BF3DE9 /* Events.swift in Sources */,
 				EDB3B13F1D8145450037A830 /* AppContainer.swift in Sources */,
 				EDB3B1381D812DD20037A830 /* FacebookAppLifeCycle.swift in Sources */,
@@ -577,12 +618,15 @@
 				ED3896331D805A98007F6F73 /* AppDelegate.swift in Sources */,
 				EDB739F81D81AB5B0034B0C7 /* KeyChain.swift in Sources */,
 				ED3896621D805AF2007F6F73 /* LogInViewController.swift in Sources */,
+				ED403C2E1D86921C00A16668 /* TinderViewController.swift in Sources */,
 				EDB739F01D81A3550034B0C7 /* LoginService.swift in Sources */,
 				EDF9D1E91D81911000BF3DE9 /* LogInViewModel.swift in Sources */,
 				EDB7069B1D81EBB1005D86A3 /* MenuViewController.swift in Sources */,
 				EDF9D1E01D8150B700BF3DE9 /* MainNavigationController.swift in Sources */,
 				EDF9D1E61D8157F000BF3DE9 /* RootViewModel.swift in Sources */,
-				EDB739F51D81A8EF0034B0C7 /* TinderViewController.swift in Sources */,
+				ED403C301D86921C00A16668 /* ExampleOverlayView.swift in Sources */,
+				ED403C321D86921C00A16668 /* CustomOverlayView.swift in Sources */,
+				EDB739F51D81A8EF0034B0C7 /* TinderBackgroundViewController.swift in Sources */,
 				EDB706991D81E5D8005D86A3 /* GuillotineMenuTransitionAnimation.swift in Sources */,
 				EDF9D1E31D8152EC00BF3DE9 /* Logger.swift in Sources */,
 			);

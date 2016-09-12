@@ -50,14 +50,10 @@ class AppContainer {
                 return controller
             }
             
-            c.register(MenuViewController.self) { r in
-                let controller = MenuViewController()
-                return controller
-            }
-            
             c.register(TinderViewController.self) { r in
-                let controller = TinderViewController(menuController: r.resolve(MenuViewController.self)!)
-                return controller
+                let storyboard = UIStoryboard(name: "TinderViewControllerStroyboard", bundle: nil)
+                let backgroundAnimator = storyboard.instantiateViewControllerWithIdentifier("TinderViewController") as! TinderViewController
+                return backgroundAnimator 
             }
             
             c.register(MainNavigationController.self) { r in
