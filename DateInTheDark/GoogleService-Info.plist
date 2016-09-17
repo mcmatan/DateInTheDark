@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>952975977627-3aqqrevnrj0aavvoaivnemi0l37qu4b2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.952975977627-3aqqrevnrj0aavvoaivnemi0l37qu4b2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDHoG1rs8_lMrVU34TdSg21d7h1Eis4F6Q</string>
+	<key>GCM_SENDER_ID</key>
+	<string>952975977627</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>MC.DateInTheDark</string>
+	<key>PROJECT_ID</key>
+	<string>dateinthedark-4ac7c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dateinthedark-4ac7c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:952975977627:ios:621278215edb0358</string>
+	<key>DATABASE_URL</key>
+	<string>https://dateinthedark-4ac7c.firebaseio.com</string>
+</dict>
+</plist>

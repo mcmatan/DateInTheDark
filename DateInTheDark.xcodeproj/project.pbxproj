@@ -11,6 +11,8 @@
 		621D489695B05CD34A521994 /* Pods_DateInTheDark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECE2A51CE07F4706BD7467B /* Pods_DateInTheDark.framework */; };
 		906B100C1D8D5BC4008CCC1A /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906B100B1D8D5BC4008CCC1A /* MenuViewModel.swift */; };
 		906B100F1D8D5CFD008CCC1A /* UserDefaultExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906B100E1D8D5CFD008CCC1A /* UserDefaultExtentions.swift */; };
+		906B10111D8D74FB008CCC1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 906B10101D8D74FB008CCC1A /* GoogleService-Info.plist */; };
+		906B10141D8D75E6008CCC1A /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906B10131D8D75E6008CCC1A /* DataBase.swift */; };
 		AFA8E6B770C5EDD83049385E /* Pods_DateInTheDarkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89D5FA678F0A6BF333FD1F1 /* Pods_DateInTheDarkUITests.framework */; };
 		ED3896331D805A98007F6F73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3896321D805A98007F6F73 /* AppDelegate.swift */; };
 		ED3896351D805A98007F6F73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3896341D805A98007F6F73 /* ViewController.swift */; };
@@ -69,6 +71,8 @@
 		6B0F4F9839AA62107726A282 /* Pods-DateInTheDarkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DateInTheDarkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DateInTheDarkUITests/Pods-DateInTheDarkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		906B100B1D8D5BC4008CCC1A /* MenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		906B100E1D8D5CFD008CCC1A /* UserDefaultExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultExtentions.swift; sourceTree = "<group>"; };
+		906B10101D8D74FB008CCC1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		906B10131D8D75E6008CCC1A /* DataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		9C60B7ED85520566E3AE7606 /* Pods-DateInTheDark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DateInTheDark.release.xcconfig"; path = "Pods/Target Support Files/Pods-DateInTheDark/Pods-DateInTheDark.release.xcconfig"; sourceTree = "<group>"; };
 		E89D5FA678F0A6BF333FD1F1 /* Pods_DateInTheDarkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DateInTheDarkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED38962F1D805A98007F6F73 /* DateInTheDark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DateInTheDark.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +174,14 @@
 			name = Extentions;
 			sourceTree = "<group>";
 		};
+		906B10121D8D75D9008CCC1A /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				906B10131D8D75E6008CCC1A /* DataBase.swift */,
+			);
+			name = DataBase;
+			sourceTree = "<group>";
+		};
 		ED3896261D805A98007F6F73 = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +219,7 @@
 				ED3896391D805A98007F6F73 /* Assets.xcassets */,
 				EDB7069C1D81F288005D86A3 /* ic_menuRotated@3x.png */,
 				ED38963B1D805A98007F6F73 /* LaunchScreen.storyboard */,
+				906B10101D8D74FB008CCC1A /* GoogleService-Info.plist */,
 				ED38963E1D805A98007F6F73 /* Info.plist */,
 			);
 			path = DateInTheDark;
@@ -277,6 +290,7 @@
 		EDB3B13C1D81452E0037A830 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				906B10121D8D75D9008CCC1A /* DataBase */,
 				EDB739F61D81AB330034B0C7 /* KeyChain */,
 				EDB739F11D81A44D0034B0C7 /* QuickBloxSetup */,
 				EDB739EE1D81A2B10034B0C7 /* LoginService */,
@@ -359,12 +373,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED3896571D805A98007F6F73 /* Build configuration list for PBXNativeTarget "DateInTheDark" */;
 			buildPhases = (
-				89762269A1CD6492DA5DD1BF /* 📦 Check Pods Manifest.lock */,
+				89762269A1CD6492DA5DD1BF /* [CP] Check Pods Manifest.lock */,
 				ED38962B1D805A98007F6F73 /* Sources */,
 				ED38962C1D805A98007F6F73 /* Frameworks */,
 				ED38962D1D805A98007F6F73 /* Resources */,
-				240EE1A27BF8E51CD993D246 /* 📦 Embed Pods Frameworks */,
-				AF3B4A47EF99FABC7B8F828C /* 📦 Copy Pods Resources */,
+				240EE1A27BF8E51CD993D246 /* [CP] Embed Pods Frameworks */,
+				AF3B4A47EF99FABC7B8F828C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -379,12 +393,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED38965A1D805A98007F6F73 /* Build configuration list for PBXNativeTarget "DateInTheDarkTests" */;
 			buildPhases = (
-				2F3D09A39B9EFE122B685A2A /* 📦 Check Pods Manifest.lock */,
+				2F3D09A39B9EFE122B685A2A /* [CP] Check Pods Manifest.lock */,
 				ED38963F1D805A98007F6F73 /* Sources */,
 				ED3896401D805A98007F6F73 /* Frameworks */,
 				ED3896411D805A98007F6F73 /* Resources */,
-				0080FFE16922649A4382D14F /* 📦 Embed Pods Frameworks */,
-				D5441B344F012CC192C2FE46 /* 📦 Copy Pods Resources */,
+				0080FFE16922649A4382D14F /* [CP] Embed Pods Frameworks */,
+				D5441B344F012CC192C2FE46 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -400,11 +414,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED38965D1D805A98007F6F73 /* Build configuration list for PBXNativeTarget "DateInTheDarkUITests" */;
 			buildPhases = (
-				A5AEB797558963A66C075BC0 /* 📦 Check Pods Manifest.lock */,
+				A5AEB797558963A66C075BC0 /* [CP] Check Pods Manifest.lock */,
 				ED38964A1D805A98007F6F73 /* Sources */,
 				ED38964B1D805A98007F6F73 /* Frameworks */,
 				ED38964C1D805A98007F6F73 /* Resources */,
-				CCB588A509543DBC0FC808EC /* 📦 Copy Pods Resources */,
+				CCB588A509543DBC0FC808EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -465,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED403C361D86921C00A16668 /* CustomOverlayView.xib in Resources */,
+				906B10111D8D74FB008CCC1A /* GoogleService-Info.plist in Resources */,
 				ED403C341D86921C00A16668 /* LaunchScreen.xib in Resources */,
 				ED403C351D86921C00A16668 /* OverlayView.xib in Resources */,
 				ED38963D1D805A98007F6F73 /* LaunchScreen.storyboard in Resources */,
@@ -491,14 +506,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0080FFE16922649A4382D14F /* 📦 Embed Pods Frameworks */ = {
+		0080FFE16922649A4382D14F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,14 +521,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DateInTheDarkTests/Pods-DateInTheDarkTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		240EE1A27BF8E51CD993D246 /* 📦 Embed Pods Frameworks */ = {
+		240EE1A27BF8E51CD993D246 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,14 +536,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DateInTheDark/Pods-DateInTheDark-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2F3D09A39B9EFE122B685A2A /* 📦 Check Pods Manifest.lock */ = {
+		2F3D09A39B9EFE122B685A2A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,14 +551,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		89762269A1CD6492DA5DD1BF /* 📦 Check Pods Manifest.lock */ = {
+		89762269A1CD6492DA5DD1BF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,14 +566,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A5AEB797558963A66C075BC0 /* 📦 Check Pods Manifest.lock */ = {
+		A5AEB797558963A66C075BC0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,14 +581,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		AF3B4A47EF99FABC7B8F828C /* 📦 Copy Pods Resources */ = {
+		AF3B4A47EF99FABC7B8F828C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -581,14 +596,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DateInTheDark/Pods-DateInTheDark-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CCB588A509543DBC0FC808EC /* 📦 Copy Pods Resources */ = {
+		CCB588A509543DBC0FC808EC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,14 +611,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DateInTheDarkUITests/Pods-DateInTheDarkUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D5441B344F012CC192C2FE46 /* 📦 Copy Pods Resources */ = {
+		D5441B344F012CC192C2FE46 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,6 +635,7 @@
 			files = (
 				ED403C311D86921C00A16668 /* CustomKolodaView.swift in Sources */,
 				EDB3B13A1D813F3A0037A830 /* RootViewController.swift in Sources */,
+				906B10141D8D75E6008CCC1A /* DataBase.swift in Sources */,
 				ED403C2F1D86921C00A16668 /* BackgroundKolodaAnimator.swift in Sources */,
 				EDF9D1EC1D8194EE00BF3DE9 /* Events.swift in Sources */,
 				EDB3B13F1D8145450037A830 /* AppContainer.swift in Sources */,

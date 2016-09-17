@@ -17,6 +17,8 @@ target 'DateInTheDark' do
    pod 'EmitterKit', '~> 4.0'
    pod 'QuickBlox', '~> 2.7'
    pod 'Koloda', '~> 3.1'
+   pod 'Firebase/Database'
+
 
 
   target 'DateInTheDarkTests' do

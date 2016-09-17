@@ -37,22 +37,30 @@ class LoginService: LoginServiceType {
         if results.grantedPermissions.contains("public_profile") {
             if (FBSDKAccessToken.currentAccessToken() != nil) {
                 let params = ["fields": "name,email,picture.type(large)"]
-                FBSDKGraphRequest(graphPath: "me", parameters: params as [NSObject : AnyObject]).startWithCompletionHandler({ (connection, result, error) in
-                    if let _ = error {
-                        return
+                let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: params)
+                graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
+                    
+                    if ((error) != nil){ print("Error: \(error)")}
+                    else
+                    {
+                        print("fetched user: \(result)")
+                        let userName : NSString = result.valueForKey("name") as! NSString
+                        print("User Name is: \(userName)")
+                        if let id: NSString = result.valueForKey("id") as? NSString {
+                            print("ID is: \(id)")
+                            let profileImageURL = self.returnUserProfileImage(id)
+                            print(profileImageURL)
+                        }
                     }
-
-//                    print("Fetched user = \(results)")
-//                    let name = results.valueForKey("name")
-//                    let picturesArr = results.valueForKey("picture")
-//                    let dataArr = picturesArr!.valueForKey("data")
-//                    let profilePic = dataArr!.valueForKey("url")
-//                    
-//                    print(profilePic)
-              
                 })
             }
         }
+    }
+    
+    private func returnUserProfileImage(facebookUserId: NSString)->NSURL?
+    {
+        let facebookProfileUrl = NSURL(string: "http://graph.facebook.com/\(facebookUserId)/picture?type=large")
+        return facebookProfileUrl
     }
     
     func isLoggedIn(isLoggedInCompletion:(isLoggenIn: Bool)->Void) {
@@ -67,7 +75,7 @@ class LoginService: LoginServiceType {
     
     func logout() {
         let loginManager = FBSDKLoginManager()
-        loginManager.logOut() 
+        loginManager.logOut()
         self.keyChain.cleanAll()
         Events.logout.emit()
     }

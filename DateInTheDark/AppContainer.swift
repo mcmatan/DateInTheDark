@@ -30,6 +30,12 @@ class AppContainer {
                 return model
             }
             
+            c.register(DataBaseType.self) { r in
+                let model = DataBase()
+                return model
+            }.inObjectScope(ObjectScope.Container)
+            c.resolve(DataBaseType.self)
+            
             //MARK: ViewModels
             
             c.register(RootViewModelType.self) { r in
