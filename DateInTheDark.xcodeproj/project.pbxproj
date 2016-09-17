@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		045A940E3DC868A2BE6DEA5D /* Pods_DateInTheDarkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3618325E241B36430DF90E /* Pods_DateInTheDarkTests.framework */; };
 		621D489695B05CD34A521994 /* Pods_DateInTheDark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECE2A51CE07F4706BD7467B /* Pods_DateInTheDark.framework */; };
+		906B100C1D8D5BC4008CCC1A /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906B100B1D8D5BC4008CCC1A /* MenuViewModel.swift */; };
+		906B100F1D8D5CFD008CCC1A /* UserDefaultExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906B100E1D8D5CFD008CCC1A /* UserDefaultExtentions.swift */; };
 		AFA8E6B770C5EDD83049385E /* Pods_DateInTheDarkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89D5FA678F0A6BF333FD1F1 /* Pods_DateInTheDarkUITests.framework */; };
 		ED3896331D805A98007F6F73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3896321D805A98007F6F73 /* AppDelegate.swift */; };
 		ED3896351D805A98007F6F73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3896341D805A98007F6F73 /* ViewController.swift */; };
@@ -65,6 +67,8 @@
 		3B48AF0DACB0D12393E53F31 /* Pods-DateInTheDarkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DateInTheDarkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DateInTheDarkTests/Pods-DateInTheDarkTests.release.xcconfig"; sourceTree = "<group>"; };
 		613FCF4757D3BB0EC1B29C4A /* Pods-DateInTheDarkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DateInTheDarkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DateInTheDarkUITests/Pods-DateInTheDarkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B0F4F9839AA62107726A282 /* Pods-DateInTheDarkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DateInTheDarkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DateInTheDarkUITests/Pods-DateInTheDarkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		906B100B1D8D5BC4008CCC1A /* MenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		906B100E1D8D5CFD008CCC1A /* UserDefaultExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultExtentions.swift; sourceTree = "<group>"; };
 		9C60B7ED85520566E3AE7606 /* Pods-DateInTheDark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DateInTheDark.release.xcconfig"; path = "Pods/Target Support Files/Pods-DateInTheDark/Pods-DateInTheDark.release.xcconfig"; sourceTree = "<group>"; };
 		E89D5FA678F0A6BF333FD1F1 /* Pods_DateInTheDarkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DateInTheDarkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED38962F1D805A98007F6F73 /* DateInTheDark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DateInTheDark.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +162,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		906B100D1D8D5CEB008CCC1A /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				906B100E1D8D5CFD008CCC1A /* UserDefaultExtentions.swift */,
+			);
+			name = Extentions;
+			sourceTree = "<group>";
+		};
 		ED3896261D805A98007F6F73 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +195,7 @@
 		ED3896311D805A98007F6F73 /* DateInTheDark */ = {
 			isa = PBXGroup;
 			children = (
+				906B100D1D8D5CEB008CCC1A /* Extentions */,
 				EDB706971D81E5D0005D86A3 /* Transitions */,
 				EDF9D1EA1D81941800BF3DE9 /* ModelEntities */,
 				EDB3B13D1D8145380037A830 /* DI */,
@@ -326,6 +339,7 @@
 			children = (
 				EDF9D1E51D8157F000BF3DE9 /* RootViewModel.swift */,
 				EDF9D1E81D81911000BF3DE9 /* LogInViewModel.swift */,
+				906B100B1D8D5BC4008CCC1A /* MenuViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -609,6 +623,7 @@
 				ED403C2F1D86921C00A16668 /* BackgroundKolodaAnimator.swift in Sources */,
 				EDF9D1EC1D8194EE00BF3DE9 /* Events.swift in Sources */,
 				EDB3B13F1D8145450037A830 /* AppContainer.swift in Sources */,
+				906B100C1D8D5BC4008CCC1A /* MenuViewModel.swift in Sources */,
 				EDB3B1381D812DD20037A830 /* FacebookAppLifeCycle.swift in Sources */,
 				EDB739F31D81A45D0034B0C7 /* QuickBloxSetup.swift in Sources */,
 				ED3896351D805A98007F6F73 /* ViewController.swift in Sources */,
@@ -619,6 +634,7 @@
 				EDB739F01D81A3550034B0C7 /* LoginService.swift in Sources */,
 				EDF9D1E91D81911000BF3DE9 /* LogInViewModel.swift in Sources */,
 				EDB7069B1D81EBB1005D86A3 /* MenuViewController.swift in Sources */,
+				906B100F1D8D5CFD008CCC1A /* UserDefaultExtentions.swift in Sources */,
 				EDF9D1E01D8150B700BF3DE9 /* MainNavigationController.swift in Sources */,
 				EDF9D1E61D8157F000BF3DE9 /* RootViewModel.swift in Sources */,
 				ED403C301D86921C00A16668 /* ExampleOverlayView.swift in Sources */,

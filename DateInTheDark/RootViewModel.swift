@@ -17,6 +17,8 @@ protocol RootViewModelType {
 class RootViewModel: RootViewModelType {
     let showLogin = BehaviorSubject<Bool>(value: true)
     private let loginService: LoginServiceType
+    var logedInListener: Listener!
+    var logedOutListener: Listener!
     
     init(loginService: LoginServiceType) {
         self.loginService = loginService
@@ -31,8 +33,11 @@ class RootViewModel: RootViewModelType {
     }
     
     func subscribeForEvents() {
-        Events.userLoggedIn.once { (void) in
+        self.logedInListener = Events.userLoggedIn.on { (void) in
             self.showLogin.onNext(false)
+        }
+        self.logedOutListener = Events.logout.on { (void) in
+            self.showLogin.onNext(true)
         }
     }
 }

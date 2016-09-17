@@ -43,6 +43,7 @@ class LogInViewModel: NSObject, LogInViewModelType {
         }
         else {
             printDebug("Success login in with facebook")
+            self.loginService.didFacebookLogin(result)
             self.loginQuickblox(with: result.token.tokenString)
         }
     }

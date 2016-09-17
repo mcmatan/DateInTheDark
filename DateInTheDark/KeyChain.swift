@@ -12,7 +12,8 @@ let KeyFacebookAccessToken = "KeyFacebookAccessToken"
 
 protocol KeyChainType {
     func saveFacebookAccessToken(facebookAccessToken token: String)
-    func getFacebookAccessToken()->String? 
+    func getFacebookAccessToken()->String?
+    func cleanAll()
 }
 
 class KeyChain: KeyChainType {
@@ -22,5 +23,8 @@ class KeyChain: KeyChainType {
     }
     func getFacebookAccessToken()->String? {
         return NSUserDefaults.standardUserDefaults().objectForKey(KeyFacebookAccessToken) as? String
+    }
+    func cleanAll() {
+        NSUserDefaults.deleteAllKeysAndValue()
     }
 }

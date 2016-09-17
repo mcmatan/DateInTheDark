@@ -19,7 +19,7 @@ private let kolodaAlphaValueSemiTransparent: CGFloat = 0.1
 class TinderViewController: UIViewController {
     
     //MARK: Mannu
-    let manuController = MenuViewController()
+    var manuController: MenuViewController!
     
     private lazy var presentationAnimator = GuillotineTransitionAnimation()
 

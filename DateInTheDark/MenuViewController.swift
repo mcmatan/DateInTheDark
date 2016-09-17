@@ -13,6 +13,17 @@ class MenuViewController: UIViewController, GuillotineMenu {
     //GuillotineMenu protocol
     var dismissButton: UIButton!
     var titleLabel: UILabel!
+    let menuViewModel: MenuViewModelType
+    let btnLogout = UIButton()
+    
+    init(menuViewModel: MenuViewModelType) {
+        self.menuViewModel = menuViewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func loadView() {
         super.loadView()
@@ -29,6 +40,17 @@ class MenuViewController: UIViewController, GuillotineMenu {
         titleLabel.font = UIFont.boldSystemFontOfSize(17)
         titleLabel.textColor = UIColor.whiteColor()
         titleLabel.sizeToFit()
+        
+        self.view.addSubview(self.btnLogout)
+        self.btnLogout.snp_makeConstraints { (make) in
+            make.center.equalTo(self.view.snp_center)
+        }
+        self.btnLogout.setTitle("Logout", forState: UIControlState.Normal)
+        self.btnLogout.addTarget(self, action: #selector(MenuViewController.logoutBtnPress), forControlEvents: UIControlEvents.TouchUpInside)
+    }
+    
+    func logoutBtnPress() {
+        self.menuViewModel.logout()
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {

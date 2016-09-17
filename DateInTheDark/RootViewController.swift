@@ -51,9 +51,9 @@ class RootViewController :UIViewController {
     //MARK: Show screens
     
     func showLoginScreen() {
-            self.dissmissLastController{ 
-              self.presentViewController(self.loginViewController, animated: true, completion: nil)
-            }
+        self.dissmissLastController{
+          self.presentViewController(self.loginViewController, animated: true, completion: nil)
+        }
     }
     
     func showMainApplication() {
@@ -61,14 +61,16 @@ class RootViewController :UIViewController {
          self.presentViewController(self.mainNavigationController, animated: true, completion: nil)
         }
     }
+    
 
     func dissmissLastController(finsihedBlock:()->Void) {
+        let animated = false
         if self.presentedViewController != nil {
-            self.presentedViewController!.dismissViewControllerAnimated(false, completion: {
+            self.dismissViewControllerAnimated(animated, completion: { 
                 finsihedBlock()
             })
         } else {
-            finsihedBlock()
+                finsihedBlock()
         }
     }
 }

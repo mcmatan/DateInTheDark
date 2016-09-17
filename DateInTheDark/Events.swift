@@ -11,4 +11,5 @@ import EmitterKit
 
 struct Events {
     static let userLoggedIn = Event<Void>()
+    static let logout = Event<Void>()
 }

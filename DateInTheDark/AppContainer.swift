@@ -42,6 +42,11 @@ class AppContainer {
                 return viewModel
             }
             
+            c.register(MenuViewModel.self) { r in
+                let viewModel = MenuViewModel(loginService: r.resolve(LoginServiceType.self)!)
+                return viewModel
+            }
+            
             //MARK: Controllers
             
             c.register(LogInViewController.self) { r in
@@ -50,10 +55,17 @@ class AppContainer {
                 return controller
             }
             
+            c.register(MenuViewController.self) { r in
+                let viewModel = r.resolve(MenuViewModel.self)
+                let controller = MenuViewController(menuViewModel: viewModel!)
+                return controller
+            }
+            
             c.register(TinderViewController.self) { r in
                 let storyboard = UIStoryboard(name: "TinderViewControllerStroyboard", bundle: nil)
-                let backgroundAnimator = storyboard.instantiateViewControllerWithIdentifier("TinderViewController") as! TinderViewController
-                return backgroundAnimator 
+                let tinderViewController = storyboard.instantiateViewControllerWithIdentifier("TinderViewController") as! TinderViewController
+                tinderViewController.manuController = r.resolve(MenuViewController.self)
+                return tinderViewController
             }
             
             c.register(MainNavigationController.self) { r in
